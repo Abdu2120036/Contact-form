@@ -1,0 +1,23 @@
+:root {
+    /* Primary */
+    --Green200 /*(lighter)*/: hsl(148, 38%, 91%);
+    --Green600 /*(medium)*/: hsl(169, 82%, 27%);
+    --Red: hsl(0, 66%, 54%);
+
+    /* Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Grey500 /*(medium)*/: hsl(186, 15%, 59%);
+    --Grey900 /*(darker)*/: hsl(187, 24%, 22%);
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url(assets/fonts/Karla-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
