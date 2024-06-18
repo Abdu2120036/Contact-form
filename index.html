@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="message">
+
+    </div>
+
+    <div class="cont">
+        <h1>Contact Us</h1>
+
+        <form>
+            <div class="sect1">
+                <div class="left">
+                    <label for="Fname">First Name</label><br>
+                    <input type="text" id="Fname">
+                </div>
+                <div class="right">
+                    <label for="Lname">Last Name</label><br>
+                    <input type="text" id="Lname">
+                </div>
+            </div>
+
+            <div class="sect2">
+                <label for="Email">Email Address</label><br>
+                <input type="email" id="Email">
+            </div>
+            
+            
+
+            <div class="sect3">
+                <label for="qtype">Query Type</label><br>
+                <div>
+                    <div class="left">
+                        <input type="radio" title="General Enquiry" name="General Enquiry" id="Genquiry">
+                        <label for="Genquiry">General Enquiry</label>
+                    </div>
+                    <div class="right">
+                        <input type="radio" title="Support Request" name="Support Request" id="Srequest">
+                        <label for="Srequest">Support Request</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sect4">
+                <label for="Message">Message</label><br>
+                <textarea name="Message" id="Message" rows="5"></textarea>
+            </div>
+
+            <div class="sect5">
+                <input type="checkbox" name="Consent" id="Consent" title="Consent">
+                <label for="Consent">I consent to being contacted by the team</label>
+            </div>
+
+            <input type="submit" value="Submit" id="Submit">
+        </form>
+    </div>
+
+    <script src="motion.js"></script>
+</body>
+</html>
