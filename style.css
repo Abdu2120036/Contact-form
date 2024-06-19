@@ -1,14 +1,14 @@
 :root {
     /* Primary */
     --Green200 /*(lighter)*/: hsl(148, 38%, 91%);
-    --Green600 /*(medium)*/: hsl(169, 82%, 27%);
+    --Green600 /*(medium) Button*/: hsl(169, 82%, 27%); 
     --Red: hsl(0, 66%, 54%);
 
     /* Neutral */
 
     --White: hsl(0, 0%, 100%);
-    --Grey500 /*(medium)*/: hsl(186, 15%, 59%);
-    --Grey900 /*(darker)*/: hsl(187, 24%, 22%);
+    --Grey500 /*(medium) small font*/: hsl(186, 15%, 59%);
+    --Grey900 /*(darker) title*/: hsl(187, 24%, 22%);
 }
 
 @font-face {
@@ -20,4 +20,107 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Green200);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: "Karla";
+}
+
+.cont {
+    background-color: var(--White);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 700px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+h1 {
+    color: var(--Grey900);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: var(--Grey500);
+    font-weight: bold;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+.sect1 {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+
+.sect1 .left,
+.sect1 .right {
+    width: 50%;
+}
+
+.sect1 input,
+.sect2 input,
+.sect4 textarea {
+    width: 100%;
+    border: 1.5px solid var(--Grey500);
+    border-radius: 4px;
+    margin-top: .5rem;
+    height: 80%;
+}
+
+.sect3 div {
+    display: flex;
+    margin-top: 0.25rem;
+    height: 60%;
+    gap: 0.5rem;
+}
+
+.sect3 .left,
+.sect3 .right {
+    border: 1.5px solid var(--Grey500);
+    border-radius: 4px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 0.25rem;
+    padding: 0.4rem;
+}
+
+.sect2 {
+    margin-bottom: 0.5rem;
+}
+
+.sect5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#Submit {
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: var(--Green600);
+    border: 0;
+    color: var(--White);
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 5px;
+    cursor: pointer;
 }
