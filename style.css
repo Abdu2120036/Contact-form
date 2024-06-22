@@ -124,3 +124,32 @@ form {
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* Hover and Focus */
+.sect1 input:hover,
+.sect2 input:hover,
+textarea:hover,
+.sect3 div div:hover
+{
+    cursor: pointer;
+    border: 1.5px solid var(--Grey900);
+}
+
+.sect3 div div label:hover {
+    cursor: pointer;
+}
+
+.sect3 div div:active {         /*  Important. Make it more likable  */
+    background-color: var(--Green200);
+}
+
+#Submit:hover {
+    background-color: var(--Grey900);
+}
+
+.sect5 input:active {
+    color: var(--Grey500);
+}
+
+
+/* Mobile */
