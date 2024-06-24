@@ -29,6 +29,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: "Karla";
+    padding: 1rem;
 }
 
 .cont {
@@ -36,7 +37,7 @@ body {
     padding: 1.5rem;
     border-radius: 1rem;
     width: 700px;
-    height: 600px;
+    /* height: 600px; */
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -52,6 +53,10 @@ form {
     gap: 1.5rem;
     color: var(--Grey500);
     font-weight: bold;
+}
+
+input {
+    padding: 0.25rem;
 }
 
 .hidden {
@@ -125,6 +130,10 @@ form {
     cursor: pointer;
 }
 
+textarea {
+    padding: 0.5rem;
+}
+
 /* Hover and Focus */
 .sect1 input:hover,
 .sect2 input:hover,
@@ -152,4 +161,38 @@ textarea:hover,
 }
 
 
+
+
+
+
+
 /* Mobile */
+
+@media (max-width: 400px) {
+    .sect1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sect1 .left,
+    .sect1 .right
+    {
+        width: 100%;
+    }
+    
+    .sect3 div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sect3 div .left,
+    .sect3 div .right
+    {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 0.5rem;
+    }
+}
