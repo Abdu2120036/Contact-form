@@ -72,7 +72,7 @@ input {
 .success-message {
     background-color: var(--Grey900);
     color: var(--White);
-    width: 400px;
+    /* width: 400px; */
     padding: 1rem;
     border-radius: 1rem;
     display: flex;
@@ -193,7 +193,11 @@ textarea:hover,
 
 
 
-
+@media (max-width: 700px) {
+    .cont {
+        width: auto;
+    }
+}
 
 
 /* Mobile */
@@ -203,6 +207,7 @@ textarea:hover,
         display: flex;
         flex-direction: column;
         width: 100%;
+        gap: 1.5rem;
     }
 
     .sect1 .left,
