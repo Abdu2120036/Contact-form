@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="message">
-
+    <div id="success-message" class="success-message ">
+        <div class="message-header">
+            <img src="assets/images/icon-success-check.svg" alt="Success Icon">
+            Message Sent!
+        </div>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
     </div>
 
     <div class="cont">
@@ -18,44 +22,44 @@
         <form>
             <div class="sect1">
                 <div class="left">
-                    <label for="Fname">First Name</label><br>
+                    <label for="Fname">First Name <span class="required-input">*</span></label><br>
                     <input type="text" id="Fname">
                 </div>
                 <div class="right">
-                    <label for="Lname">Last Name</label><br>
+                    <label for="Lname">Last Name <span class="required-input">*</span></label><br>
                     <input type="text" id="Lname">
                 </div>
             </div>
 
             <div class="sect2">
-                <label for="Email">Email Address</label><br>
+                <label for="Email">Email Address <span class="required-input">*</span></label><br>
                 <input type="email" id="Email">
             </div>
             
             
 
             <div class="sect3">
-                <label for="qtype">Query Type</label><br>
-                <div>
+                <label for="qtype">Query Type <span class="required-input">*</span></label><br>
+                <div class="provided " >
                     <div class="left">
-                        <input type="radio" title="General Enquiry" name="General Enquiry" id="Genquiry">
+                        <input type="radio" name="gtype" id="Genquiry">
                         <label for="Genquiry">General Enquiry</label>
                     </div>
                     <div class="right">
-                        <input type="radio" title="Support Request" name="Support Request" id="Srequest">
+                        <input type="radio" name="qtype" id="Srequest">
                         <label for="Srequest">Support Request</label>
                     </div>
                 </div>
             </div>
             
             <div class="sect4">
-                <label for="Message">Message</label><br>
+                <label for="Message">Message <span class="required-input">*</span></label><br>
                 <textarea name="Message" id="Message" rows="5"></textarea>
             </div>
 
             <div class="sect5">
                 <input type="checkbox" name="Consent" id="Consent" title="Consent">
-                <label for="Consent">I consent to being contacted by the team</label>
+                <label for="Consent">I consent to being contacted by the team <span class="required-input">*</span></label>
             </div>
 
             <input type="submit" value="Submit" id="Submit">
