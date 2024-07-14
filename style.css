@@ -26,6 +26,8 @@ body {
     background-color: var(--Green200);
     display: flex;
     height: 100vh;
+    flex-direction: column;
+    position: relative;
     justify-content: center;
     align-items: center;
     font-family: "Karla";
@@ -62,6 +64,34 @@ input {
 .hidden {
     display: none !important;
 }
+
+
+
+
+/* Success Message Box */
+.success-message {
+    background-color: var(--Grey900);
+    color: var(--White);
+    width: 400px;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+}
+.message-header {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    font-size: medium;
+    font-weight: bold;
+}
+.success-message p {
+    font-size: small;
+}
+
+
 
 
 .sect1 {
