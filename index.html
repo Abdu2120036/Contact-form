@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="success-message" class="success-message ">
+    <div id="success-message" class="success-message hidden">
         <div class="message-header">
             <img src="assets/images/icon-success-check.svg" alt="Success Icon">
             Message Sent!
@@ -24,16 +24,19 @@
                 <div class="left">
                     <label for="Fname">First Name <span class="required-input">*</span></label><br>
                     <input type="text" id="Fname">
+                    <p class="form-alert">This field is required</p>
                 </div>
                 <div class="right">
                     <label for="Lname">Last Name <span class="required-input">*</span></label><br>
                     <input type="text" id="Lname">
+                    <p class="form-alert">This field is required</p>
                 </div>
             </div>
 
             <div class="sect2">
                 <label for="Email">Email Address <span class="required-input">*</span></label><br>
                 <input type="email" id="Email">
+                <p class="form-alert">Please enter a valid email address</p>
             </div>
             
             
@@ -50,16 +53,22 @@
                         <label for="Srequest">Support Request</label>
                     </div>
                 </div>
+                <p class="form-alert">Please select a query type</p>
             </div>
             
             <div class="sect4">
                 <label for="Message">Message <span class="required-input">*</span></label><br>
                 <textarea name="Message" id="Message" rows="5"></textarea>
+                <p class="form-alert">This field is required</p>
             </div>
 
             <div class="sect5">
-                <input type="checkbox" name="Consent" id="Consent" title="Consent">
-                <label for="Consent">I consent to being contacted by the team <span class="required-input">*</span></label>
+                <div>
+                    <input type="checkbox" name="Consent" id="Consent" title="Consent">
+                    <label for="Consent">I consent to being contacted by the team <span class="required-input">*</span></label>
+                </div>
+
+                <p class="form-alert">This field is required</p>
             </div>
 
             <input type="submit" value="Submit" id="Submit">
