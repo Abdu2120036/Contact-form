@@ -203,8 +203,10 @@ textarea:hover,
     background-color: var(--Grey900);
 }
 
-.sect5 input:active {
-    color: var(--Grey500);
+input[type="radio"]:checked,
+input[type="checkbox"]:checked
+{
+    background-color: var(--Grey500);
 }
 
 
